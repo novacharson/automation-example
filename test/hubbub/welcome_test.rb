@@ -11,7 +11,6 @@ class WelcomePageTest < Minitest::Test
 
   def test_valid
     assert subject.valid?
-    
   end
 
   def test_without_user_session_render_welcome_page
@@ -21,5 +20,10 @@ class WelcomePageTest < Minitest::Test
    def test_load_why_hubbub_link
      subject.why_hubbub!
      assert page.has_content?('ignite vibrancy into your employee wellness program')
+   end
+
+   def test_load_our_soulution_link
+     subject.our_solution!
+     assert page.has_content?('building behavior change one small habit at a time.')
    end
 end
