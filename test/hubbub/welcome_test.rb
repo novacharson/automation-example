@@ -11,6 +11,7 @@ class WelcomePageTest < Minitest::Test
 
   def test_valid
     assert subject.valid?
+    
   end
 
   def test_without_user_session_render_welcome_page
