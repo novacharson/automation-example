@@ -17,8 +17,8 @@ class WelcomePageTest < Minitest::Test
     assert page.has_content?("wellness doesn't end at 5pm.")
   end
 
-  # def test_load_why_hubbub_link
-  #   subject.why_hubbub!
-  #   assert page.has_content?('Vibrancy in your employee wellness program')
-  # end
+   def test_load_why_hubbub_link
+     subject.why_hubbub!
+     assert page.has_content?('ignite vibrancy into your employee wellness program')
+   end
 end
